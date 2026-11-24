@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Portfolio of Md. Mahbubur Rahman, Network Engineer specializing in ISP and IIG operations, BGP, OSPF and multi-vendor routing.">
+<title>Md. Mahbubur Rahman | Network & Security Engineer</title>
+<style>
+:root{--bg:#07111f;--surface:#101e31;--surface2:#14253b;--text:#edf5ff;--muted:#9aadc4;--line:rgba(161,190,224,.16);--cyan:#58d8e8;--blue:#8197ff;--green:#65e6b2;--max:1120px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(ellipse at 12% 0%,rgba(44,127,174,.18),transparent 34rem),radial-gradient(ellipse at 95% 30%,rgba(91,89,198,.13),transparent 32rem),var(--bg);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.container{width:min(var(--max),calc(100% - 40px));margin:auto}.grid-bg{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.13;background-image:linear-gradient(rgba(130,170,210,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(130,170,210,.13) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(#000,transparent 85%)}
+header{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.2px}.brand-mark{width:37px;height:37px;display:grid;place-items:center;border-radius:11px;color:#071321;background:linear-gradient(135deg,var(--cyan),var(--blue));font-size:20px}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:1.5px;font-weight:700}.nav-links{display:flex;gap:25px;color:var(--muted);font-size:12px;font-weight:700}.nav-links a:hover{color:var(--cyan)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid rgba(88,216,232,.4);border-radius:999px;padding:10px 17px;font-size:12px;font-weight:800;background:rgba(88,216,232,.08);transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);border-color:var(--cyan);background:rgba(88,216,232,.16)}.menu-btn{display:none;background:var(--surface);color:white;border:1px solid var(--line);padding:7px 11px;border-radius:9px;font-size:19px}
+.hero{padding:92px 0 74px;display:grid;grid-template-columns:1.12fr .88fr;gap:45px;align-items:center}.eyebrow,.kicker{color:var(--cyan);font-size:11px;font-weight:850;letter-spacing:1.8px;text-transform:uppercase}.eyebrow{display:flex;align-items:center;gap:10px}.pulse{width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 0 5px rgba(101,230,178,.1)}h1{font-size:clamp(40px,5.7vw,65px);line-height:1.08;letter-spacing:-2.5px;margin:20px 0}.gradient{background:linear-gradient(95deg,var(--cyan),#a4b1ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{font-size:16px;color:var(--muted);max-width:640px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn.primary{color:#061321;background:linear-gradient(100deg,var(--cyan),#9aaeff);border:0}.btn.ghost{background:transparent;border-color:var(--line)}.contact-inline{display:flex;flex-wrap:wrap;gap:17px;margin-top:27px;color:var(--muted);font-size:12px}.contact-inline a:hover{color:var(--cyan)}.stats{display:flex;flex-wrap:wrap;gap:30px;margin-top:35px}.stat strong{display:block;font-size:22px}.stat span{font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.visual{min-height:370px;display:grid;place-items:center;position:relative}.orb{position:absolute;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle,rgba(88,216,232,.17),rgba(129,151,255,.06) 55%,transparent 72%)}.topology-card{position:relative;width:min(100%,420px);padding:23px;border:1px solid rgba(161,190,224,.2);border-radius:24px;background:linear-gradient(145deg,rgba(20,39,64,.95),rgba(9,21,38,.9));box-shadow:0 28px 80px rgba(0,0,0,.32)}.card-head{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;letter-spacing:1.2px;text-transform:uppercase}.online{color:var(--green)}.topology{height:260px;margin-top:15px}.topology svg{width:100%;height:100%}.link{stroke:rgba(88,216,232,.62);stroke-width:1.5;stroke-dasharray:5 5;animation:flow 18s linear infinite}.node{fill:#142d49;stroke:var(--cyan);stroke-width:1.5}.core{fill:#1c3458;stroke:var(--blue)}.label{fill:#e1edff;font-size:10px;font-weight:700;text-anchor:middle}@keyframes flow{to{stroke-dashoffset:-100}}
+section{padding:70px 0}.section-head{max-width:690px;margin-bottom:30px}.section-head h2{font-size:clamp(28px,4vw,39px);line-height:1.2;letter-spacing:-1.1px;margin:9px 0 11px}.section-head p,.muted{color:var(--muted)}.panel{padding:27px;border:1px solid var(--line);border-radius:19px;background:rgba(16,30,49,.78)}.about-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:17px}.panel h3{font-size:18px;margin-bottom:10px}.panel p{color:var(--muted);font-size:14px}.bullet-list{display:grid;gap:11px;margin-top:18px}.bullet{display:flex;gap:10px;color:#dce9f8;font-size:13px}.tick{flex:0 0 22px;height:22px;display:grid;place-items:center;border-radius:7px;background:rgba(101,230,178,.1);color:var(--green)}.skill{margin:15px 0}.skill-title{display:flex;justify-content:space-between;gap:10px;font-size:12px;margin-bottom:7px}.skill-title span:last-child{color:var(--muted);font-size:10px}.bar{height:6px;background:rgba(154,183,220,.13);border-radius:20px;overflow:hidden}.bar i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--cyan),var(--blue));border-radius:20px}
+.timeline{position:relative;margin-left:7px;padding-left:27px;border-left:1px solid rgba(88,216,232,.3);display:grid;gap:22px}.job{position:relative;padding:23px 25px;border:1px solid var(--line);border-radius:17px;background:rgba(16,30,49,.72)}.job:before{content:"";position:absolute;left:-34px;top:27px;width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 5px rgba(88,216,232,.1)}.job-head{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:12px}.job h3{font-size:17px}.role{color:var(--cyan);font-size:12px;font-weight:750}.date{color:var(--muted);font-size:11px}.job ul{padding-left:18px;color:var(--muted);font-size:13px}.job li{padding:3px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service{padding:23px;border:1px solid var(--line);border-radius:17px;background:rgba(16,30,49,.75);transition:.2s}.service:hover,.project:hover{transform:translateY(-4px);border-color:rgba(88,216,232,.4)}.icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:rgba(88,216,232,.1);color:var(--cyan);font-size:19px;margin-bottom:14px}.service h3{font-size:15px;margin-bottom:7px}.service p,.project p{color:var(--muted);font-size:12px}.tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:19px}.tag{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:#c8d8eb;background:rgba(16,30,49,.55);font-size:10px;font-weight:700}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.project{padding:24px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(145deg,rgba(20,37,60,.86),rgba(12,24,41,.78));transition:.2s}.project-top{display:flex;justify-content:space-between;margin-bottom:14px}.project-type{color:var(--cyan);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:800}.project-no{font-size:20px;color:rgba(154,183,220,.35);font-weight:850}.project h3{font-size:16px;margin-bottom:7px}
+
+.projects-intro{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;flex-wrap:wrap}
+.project-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.filter-btn{border:1px solid var(--line);background:rgba(16,30,49,.65);color:var(--muted);padding:7px 12px;border-radius:999px;font:inherit;font-size:10px;font-weight:800;cursor:pointer;transition:.2s}
+.filter-btn:hover,.filter-btn.active{color:#071321;background:var(--cyan);border-color:var(--cyan)}
+.lab-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.lab-card{position:relative;overflow:hidden;padding:23px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(20,38,62,.9),rgba(11,23,40,.86));transition:.22s}
+.lab-card:hover{transform:translateY(-4px);border-color:rgba(88,216,232,.42)}
+.lab-card[hidden]{display:none}
+.lab-card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
+.lab-category{font-size:9px;letter-spacing:1.2px;text-transform:uppercase;color:var(--cyan);font-weight:850}
+.lab-status{font-size:9px;color:var(--green);border:1px solid rgba(101,230,178,.2);background:rgba(101,230,178,.07);padding:4px 8px;border-radius:999px;font-weight:800}
+.lab-visual{height:115px;margin-bottom:17px;border:1px solid rgba(161,190,224,.12);border-radius:12px;background:radial-gradient(ellipse at center,rgba(88,216,232,.09),rgba(7,17,31,.35));display:grid;place-items:center;overflow:hidden}
+.lab-visual svg{width:100%;height:100%}
+.lab-visual .wire{stroke:rgba(88,216,232,.65);stroke-width:1.5;stroke-dasharray:4 4}
+.lab-visual .box{fill:#142d49;stroke:#58d8e8;stroke-width:1.2}
+.lab-visual .box-alt{fill:#1c3458;stroke:#8197ff;stroke-width:1.2}
+.lab-visual text{fill:#dceaff;font-size:9px;font-weight:700;text-anchor:middle}
+.lab-card h3{font-size:16px;margin-bottom:7px}
+.lab-card p{font-size:12px;color:var(--muted)}
+.lab-meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}
+.lab-meta span{font-size:9px;color:#c8d8eb;border:1px solid var(--line);border-radius:999px;padding:5px 8px}
+.lab-note{margin-top:20px;padding:13px 16px;border-left:2px solid var(--cyan);background:rgba(88,216,232,.055);color:var(--muted);font-size:11px}
+@media(max-width:620px){.lab-grid{grid-template-columns:1fr}}
+
+.training-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.training{display:flex;gap:14px;padding:17px;border:1px solid var(--line);border-radius:15px;background:rgba(16,30,49,.72)}.training-icon{flex:0 0 37px;height:37px;display:grid;place-items:center;border-radius:11px;background:rgba(129,151,255,.12);color:#aab8ff;font-size:16px}.training h3{font-size:13px;line-height:1.4}.training p{color:var(--muted);font-size:11px;margin-top:3px}.badge{display:inline-block;margin-top:7px;padding:3px 8px;border-radius:999px;background:rgba(88,216,232,.09);color:var(--cyan);font-size:9px;font-weight:800;letter-spacing:.6px;text-transform:uppercase}
+.edu{padding:23px;border:1px solid var(--line);border-radius:17px;background:rgba(16,30,49,.72);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.edu h3{font-size:16px}.edu p{color:var(--muted);font-size:12px}.edu-year{color:var(--cyan);font-size:12px;font-weight:750;white-space:nowrap}
+.contact-box{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:35px;border:1px solid rgba(88,216,232,.25);border-radius:22px;background:linear-gradient(110deg,rgba(36,94,120,.22),rgba(69,76,150,.15))}.contact-box p{color:var(--muted);max-width:580px;font-size:13px}.contact-details{display:flex;flex-wrap:wrap;gap:17px;margin-top:16px;font-size:12px;color:#cbd9e9}.contact-details a:hover{color:var(--cyan)}footer{padding:25px 0;border-top:1px solid var(--line);color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.reveal{opacity:0;transform:translateY(16px);transition:.6s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:70px;gap:10px}.visual{min-height:330px}.about-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.container{width:calc(100% - 30px)}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:74px;left:0;right:0;padding:18px 22px;background:#0b1728;border-bottom:1px solid var(--line);flex-direction:column;gap:17px}.nav-links.open{display:flex}.nav-cta{display:none}.hero{padding:58px 0 45px}h1{letter-spacing:-1.7px}.hero-copy{font-size:14px}.visual{min-height:300px}.topology-card{padding:17px}.topology{height:225px}section{padding:55px 0}.cards,.project-grid,.training-grid{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column;padding:26px}.stats{gap:19px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="grid-bg"></div>
+<header><div class="container"><nav aria-label="Main navigation">
+<a class="brand" href="#home"><span class="brand-mark">⌘</span><span>MD MAHBUBUR RAHMAN<small>NETWORK & SECURITY ENGINEER</small></span></a>
+<button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+<div class="nav-links" id="navLinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#expertise">Skills</a><a href="#projects">Projects</a><a href="#training">Training</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+<a class="nav-cta" href="#contact">Let's connect ↗</a>
+</nav></div></header>
+<main><div class="container">
+<section class="hero" id="home">
+<div>
+<div class="eyebrow"><span class="pulse"></span> Dhaka, Bangladesh · ISP / IIG Networking</div>
+<h1>Engineering the routes<br>that keep us <span class="gradient">connected.</span></h1>
+<p class="hero-copy">I'm <strong style="color:var(--text)">Md. Mahbubur Rahman</strong>, a Network & Security Engineer with 4 years of experience in ISP and IIG network operations. I specialize in IP routing, BGP peering, OSPF, routing policy management, and multi-vendor network infrastructure.</p>
+<div class="hero-actions"><a class="btn primary" href="#experience">Explore my experience ↗</a><a class="btn ghost" href="#contact">Contact me</a></div>
+<div class="contact-inline"><a href="tel:+8801983567035">☎ +880 1983-604075</a><a href="mailto:mahb140r@gmail.com">✉ mahbub140r@gmail.com</a><a href="https://www.linkedin.com/in/demo45f" target="_blank" rel="noopener">linkedin.com/in/mahbub140s ↗</a></div>
+<div class="stats"><div class="stat"><strong>4 Years</strong><span>Network operations</span></div><div class="stat"><strong>Multi-vendor</strong><span>Routing platforms</span></div><div class="stat"><strong>ISP / IIG</strong><span>Core focus</span></div></div>
+</div>
+<div class="visual"><div class="orb"></div><div class="topology-card"><div class="card-head"><span>Service provider topology</span><span class="online">● NETWORK ONLINE</span></div><div class="topology"><svg viewBox="0 0 360 250" role="img" aria-label="Core router connected to edge routers and network services"><path class="link" d="M180 43L82 110M180 43L278 110M82 110L48 202M82 110L132 202M278 110L228 202M278 110L318 202M82 110L180 163M278 110L180 163"/><rect class="node core" x="145" y="18" width="70" height="45" rx="10"/><text class="label" x="180" y="36">CORE</text><text class="label" x="180" y="49">ROUTER</text><rect class="node" x="48" y="89" width="68" height="42" rx="9"/><text class="label" x="82" y="114">EDGE-01</text><rect class="node" x="244" y="89" width="68" height="42" rx="9"/><text class="label" x="278" y="114">EDGE-02</text><rect class="node core" x="145" y="142" width="70" height="42" rx="9"/><text class="label" x="180" y="167">PEERING</text><circle class="node" cx="48" cy="211" r="18"/><text class="label" x="48" y="215">CPE</text><circle class="node" cx="132" cy="211" r="18"/><text class="label" x="132" y="215">OLT</text><circle class="node" cx="228" cy="211" r="18"/><text class="label" x="228" y="215">IX</text><circle class="node" cx="318" cy="211" r="18"/><text class="label" x="318" y="215">ISP</text></svg></div></div></div>
+</section>
+
+<section id="about" class="reveal"><div class="section-head"><div class="kicker">Profile</div><h2>Network operations, routing, and reliable connectivity.</h2><p>Hands-on experience supporting service-provider networks, managing routing behavior, and coordinating incident resolution across teams and network partners.</p></div>
+<div class="about-grid"><div class="panel"><h3>Professional summary</h3><p>Network Engineer with 4 years of experience in ISP and IIG network operations, specializing in BGP routing, peering configuration, routing policy management, and multi-vendor infrastructure. Experienced with Cisco NCS, MikroTik CCR, Huawei, and Juniper platforms. Practical knowledge of BGP attributes such as Local Preference and AS-Path, prefix filtering, route advertisement, and routing policy implementation. Also experienced in network troubleshooting, incident management, and configuration preparation. Holds a BSc in Computer Science &amp; Engineering, with additional training in networking, network security, IPv6 address planning, and IT automation.</p>
+<div class="bullet-list"><div class="bullet"><span class="tick">✓</span><span>ISP and International Internet Gateway (IIG) network operations.</span></div><div class="bullet"><span class="tick">✓</span><span>BGP peering, routing policy, prefix filtering, and route advertisement.</span></div><div class="bullet"><span class="tick">✓</span><span>Multi-vendor configuration preparation, troubleshooting, and incident coordination.</span></div></div></div>
+<div class="panel"><div class="kicker">Technical focus</div>
+<div class="skill"><div class="skill-title"><span>BGP &amp; Routing Policy</span><span>Core focus</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+<div class="skill"><div class="skill-title"><span>OSPF &amp; IP Networking</span><span>Hands-on</span></div><div class="bar"><i style="--w:84%"></i></div></div>
+<div class="skill"><div class="skill-title"><span>Multi-vendor Routers</span><span>Hands-on</span></div><div class="bar"><i style="--w:86%"></i></div></div>
+<div class="skill"><div class="skill-title"><span>ISP / IIG Operations</span><span>Hands-on</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+</div></div></section>
+
+<section id="experience" class="reveal"><div class="section-head"><div class="kicker">Career</div><h2>Professional experience</h2><p>Experience across IIG and ISP network operations, from access-network troubleshooting to service-provider routing.</p></div>
+<div class="timeline">
+<article class="job"><div class="job-head"><div><h3>Earth Telecommunication Pvt Ltd</h3><div class="role">NOC Engineer</div></div><div class="date">October 2024 – Present</div></div><ul>
+<li>Monitor and troubleshoot network connectivity, routing, and service availability within the IIG network environment.</li>
+<li>Configure and troubleshoot BGP peering, routing policies, and BGP attributes to support efficient routing and network stability.</li>
+<li>Work with BGP and OSPF to investigate routing issues and maintain network reliability.</li>
+<li>Configure and troubleshoot Cisco NCS, MikroTik CCR, Huawei, and Juniper platforms.</li>
+<li>Prepare and review vendor-specific CLI configuration scripts for routing policies, prefix filtering, and network changes.</li>
+<li>Investigate routing anomalies, link failures, and network incidents, identify root causes, and coordinate service restoration.</li>
+<li>Coordinate with upstream and downstream network partners and internal teams to resolve connectivity issues.</li>
+</ul></article>
+<article class="job"><div class="job-head"><div><h3>Speed Tech Online</h3><div class="role">NOC Executive</div></div><div class="date">October 2022 – September 2024</div></div><ul>
+<li>Monitored ISP network performance, connectivity, and service availability using SolarWinds, Cacti, and other monitoring tools.</li>
+<li>Troubleshot connectivity across switches, MikroTik routers, OLTs, ONUs, and customer-premises routers in FTTx/FTTH infrastructure.</li>
+<li>Used ping, traceroute, and troubleshooting utilities to investigate connectivity faults, packet loss, and service disruptions.</li>
+<li>Coordinated with upstream providers and internal teams to investigate link failures and restore services.</li>
+<li>Managed customer technical support requests through ticketing portals and telephone support, including escalation and resolution.</li>
+</ul></article></div></section>
+
+<section id="expertise" class="reveal"><div class="section-head"><div class="kicker">Capabilities</div><h2>Technical skills &amp; technologies</h2><p>A practical multi-vendor skill set across routing, infrastructure, monitoring, security, and access networks.</p></div>
+<div class="cards">
+<article class="service"><div class="icon">⇄</div><h3>Routing &amp; IP Networking</h3><p>BGP, eBGP peering, OSPF, static routing, routing policies, prefix filtering, Local Preference, MED, AS-Path, IPv4/IPv6, TCP/IP, and MPLS.</p></article>
+<article class="service"><div class="icon">⌘</div><h3>Multi-vendor Infrastructure</h3><p>Cisco NCS, MikroTik CCR, Huawei, Juniper, routers, Layer 2/Layer 3 switches, VLAN, VXLAN, and QoS.</p></article>
+<article class="service"><div class="icon">⌗</div><h3>Configuration &amp; Troubleshooting</h3><p>Router configuration, CLI script preparation, routing troubleshooting, link failure analysis, fault isolation, and service restoration.</p></article>
+<article class="service"><div class="icon">◉</div><h3>Monitoring &amp; NOC Operations</h3><p>SolarWinds, Cacti, MRTG, SNMP, performance monitoring, incident management, and upstream/downstream coordination.</p></article>
+<article class="service"><div class="icon">◈</div><h3>Network Services &amp; Security</h3><p>DNS, DHCP, NAT, firewall, VPN, log analysis, and network security fundamentals.</p></article>
+<article class="service"><div class="icon">⌁</div><h3>Automation &amp; Access Networks</h3><p>Python scripting, network task automation, FTTx/FTTH, GPON, OLT, ONU, and ONT technologies.</p></article>
+</div><div class="tag-list"><span class="tag">BGP</span><span class="tag">eBGP Peering</span><span class="tag">OSPF</span><span class="tag">MPLS</span><span class="tag">IPv4 / IPv6</span><span class="tag">Cisco NCS</span><span class="tag">MikroTik CCR</span><span class="tag">Huawei</span><span class="tag">Juniper</span><span class="tag">VLAN</span><span class="tag">VXLAN</span><span class="tag">QoS</span><span class="tag">SolarWinds</span><span class="tag">Cacti</span><span class="tag">MRTG</span><span class="tag">SNMP</span><span class="tag">Python</span><span class="tag">GPON</span></div></section>
+
+
+<section id="projects" class="reveal">
+<div class="section-head projects-intro"><div><div class="kicker">Hands-on work</div><h2>Projects &amp; lab showcase</h2><p>A selection of service-provider networking labs and practical project work. Each card can be expanded with your own topology, configuration snippets, screenshots, and results.</p></div></div>
+<div class="project-filters" role="group" aria-label="Filter projects">
+<button class="filter-btn active" data-filter="all" aria-pressed="true">All work</button>
+<button class="filter-btn" data-filter="routing" aria-pressed="false">Routing</button>
+<button class="filter-btn" data-filter="isp" aria-pressed="false">ISP / IIG</button>
+<button class="filter-btn" data-filter="security" aria-pressed="false">Security</button>
+<button class="filter-btn" data-filter="automation" aria-pressed="false">Automation</button>
+</div>
+<div class="lab-grid">
+<article class="lab-card" data-category="routing">
+<div class="lab-card-top"><span class="lab-category">Routing · BGP</span><span class="lab-status">Lab project</span></div>
+<div class="lab-visual"><svg viewBox="0 0 360 115" role="img" aria-label="BGP peering topology with two providers and an edge router"><path class="wire" d="M180 57L75 28M180 57L285 28M180 57L75 91M180 57L285 91"/><rect class="box-alt" x="142" y="38" width="76" height="38" rx="7"/><text x="180" y="54">EDGE</text><text x="180" y="66">ROUTER</text><rect class="box" x="39" y="12" width="72" height="30" rx="6"/><text x="75" y="31">ISP-A</text><rect class="box" x="249" y="12" width="72" height="30" rx="6"/><text x="285" y="31">ISP-B</text><rect class="box" x="39" y="76" width="72" height="27" rx="6"/><text x="75" y="93">IX / IIG</text><rect class="box" x="249" y="76" width="72" height="27" rx="6"/><text x="285" y="93">CUSTOMERS</text></svg></div>
+<h3>Multi-homing &amp; BGP Policy Lab</h3><p>Build a dual-upstream BGP topology and practise eBGP peering, route advertisement, prefix filtering, Local Preference, AS-Path manipulation, and failover behavior.</p>
+<div class="lab-meta"><span>BGP</span><span>eBGP</span><span>Local Preference</span><span>AS-Path</span><span>Prefix Lists</span></div>
+</article>
+<article class="lab-card" data-category="isp">
+<div class="lab-card-top"><span class="lab-category">ISP · Subscriber services</span><span class="lab-status">Lab project</span></div>
+<div class="lab-visual"><svg viewBox="0 0 360 115" role="img" aria-label="PPPoE subscriber access topology"><path class="wire" d="M65 58H145M215 58H295M180 27V58"/><rect class="box" x="24" y="42" width="82" height="32" rx="6"/><text x="65" y="61">CLIENTS</text><rect class="box-alt" x="145" y="42" width="70" height="32" rx="6"/><text x="180" y="61">BNG / NAS</text><rect class="box" x="254" y="42" width="82" height="32" rx="6"/><text x="295" y="61">RADIUS</text><rect class="box" x="145" y="8" width="70" height="28" rx="6"/><text x="180" y="26">INTERNET</text></svg></div>
+<h3>PPPoE &amp; RADIUS Access Network</h3><p>Configure a subscriber access lab with PPPoE server profiles, centralized RADIUS authentication, customer session management, and bandwidth policy assignment.</p>
+<div class="lab-meta"><span>MikroTik</span><span>PPPoE</span><span>RADIUS</span><span>Queues</span><span>AAA</span></div>
+</article>
+<article class="lab-card" data-category="routing">
+<div class="lab-card-top"><span class="lab-category">Routing · IGP</span><span class="lab-status">Lab project</span></div>
+<div class="lab-visual"><svg viewBox="0 0 360 115" role="img" aria-label="OSPF multi-area routing topology"><path class="wire" d="M85 58L180 30L275 58M85 58L180 88L275 58M180 30V88"/><circle class="box" cx="85" cy="58" r="20"/><circle class="box-alt" cx="180" cy="30" r="20"/><circle class="box" cx="275" cy="58" r="20"/><circle class="box-alt" cx="180" cy="88" r="18"/><text x="85" y="61">R1</text><text x="180" y="33">R2</text><text x="275" y="61">R3</text><text x="180" y="91">R4</text></svg></div>
+<h3>Multi-area OSPF Routing Lab</h3><p>Design a multi-router OSPF topology to practise area planning, neighbor adjacency, route summarization, LSDB analysis, and troubleshooting route propagation.</p>
+<div class="lab-meta"><span>OSPF</span><span>LSA</span><span>Area Design</span><span>Route Analysis</span></div>
+</article>
+<article class="lab-card" data-category="security">
+<div class="lab-card-top"><span class="lab-category">Security · Traffic engineering</span><span class="lab-status">Lab project</span></div>
+<div class="lab-visual"><svg viewBox="0 0 360 115" role="img" aria-label="Firewall and segmented network topology"><path class="wire" d="M55 58H140M220 58H305M180 23V58"/><rect class="box" x="17" y="42" width="76" height="32" rx="6"/><text x="55" y="61">WAN</text><rect class="box-alt" x="140" y="39" width="80" height="38" rx="6"/><text x="180" y="54">FIREWALL</text><text x="180" y="66">NAT</text><rect class="box" x="267" y="42" width="76" height="32" rx="6"/><text x="305" y="61">LAN</text><rect class="box" x="145" y="7" width="70" height="25" rx="6"/><text x="180" y="24">DMZ</text></svg></div>
+<h3>Firewall, NAT &amp; VLAN Segmentation</h3><p>Build a segmented network with firewall filtering, source and destination NAT, VLAN separation, controlled inter-VLAN access, and traffic inspection.</p>
+<div class="lab-meta"><span>Firewall</span><span>NAT</span><span>VLAN</span><span>ACL</span><span>Security</span></div>
+</article>
+<article class="lab-card" data-category="automation">
+<div class="lab-card-top"><span class="lab-category">Automation · Python</span><span class="lab-status">Lab project</span></div>
+<div class="lab-visual"><svg viewBox="0 0 360 115" role="img" aria-label="Python automation connecting to multiple network devices"><path class="wire" d="M180 57L75 27M180 57L285 27M180 57L75 90M180 57L285 90"/><rect class="box-alt" x="143" y="39" width="74" height="36" rx="7"/><text x="180" y="61">PYTHON</text><rect class="box" x="40" y="12" width="70" height="28" rx="6"/><text x="75" y="30">CISCO</text><rect class="box" x="250" y="12" width="70" height="28" rx="6"/><text x="285" y="30">MIKROTIK</text><rect class="box" x="40" y="76" width="70" height="28" rx="6"/><text x="75" y="94">HUAWEI</text><rect class="box" x="250" y="76" width="70" height="28" rx="6"/><text x="285" y="94">JUNIPER</text></svg></div>
+<h3>Multi-vendor Configuration Automation</h3><p>Develop Python scripts to support repeatable network tasks such as configuration preparation, command execution, and collecting device outputs in a controlled lab.</p>
+<div class="lab-meta"><span>Python</span><span>SSH</span><span>Automation</span><span>Multi-vendor</span></div>
+</article>
+<article class="lab-card" data-category="isp">
+<div class="lab-card-top"><span class="lab-category">ISP · Access network</span><span class="lab-status">Lab project</span></div>
+<div class="lab-visual"><svg viewBox="0 0 360 115" role="img" aria-label="FTTH GPON access network topology"><path class="wire" d="M55 57H135M225 57H305M180 23V57"/><rect class="box" x="17" y="41" width="76" height="32" rx="6"/><text x="55" y="60">CORE</text><rect class="box-alt" x="135" y="39" width="90" height="36" rx="6"/><text x="180" y="54">GPON OLT</text><text x="180" y="66">SPLITTER</text><rect class="box" x="267" y="41" width="76" height="32" rx="6"/><text x="305" y="60">ONT / CPE</text><rect class="box" x="145" y="7" width="70" height="25" rx="6"/><text x="180" y="24">UPLINK</text></svg></div>
+<h3>FTTH / GPON Access Network Lab</h3><p>Explore the service path from ISP aggregation to OLT, optical distribution, ONU/ONT, and customer premises, including common access troubleshooting scenarios.</p>
+<div class="lab-meta"><span>FTTH</span><span>GPON</span><span>OLT</span><span>ONU / ONT</span></div>
+</article>
+</div>
+</section>
+
+<section id="training" class="reveal"><div class="section-head"><div class="kicker">Professional development</div><h2>Certifications &amp; training</h2><p>Professional training and credentials in routing, networking, IPv6, and cybersecurity.</p></div>
+<div class="training-grid">
+<div class="training"><div class="training-icon">✦</div><div><h3>CCNP: Advanced Routing</h3><p>Cisco Networking Academy (NetAcad) · 2025</p><span class="badge">Training</span></div></div>
+<div class="training"><div class="training-icon">✦</div><div><h3>CCNP: Core Networking</h3><p>Cisco Networking Academy (NetAcad) · 2025</p><span class="badge">Training</span></div></div>
+<div class="training"><div class="training-icon">◎</div><div><h3>IPv6 Address Planning Course</h3><p>APNIC · 2026</p><span class="badge">Training</span></div></div>
+<div class="training"><div class="training-icon">✦</div><div><h3>Cisco Certified Network Associate (CCNA)</h3><p>Cisco Networking Academy (NetAcad) · 2023</p><span class="badge">Training</span></div></div>
+<div class="training"><div class="training-icon">⌘</div><div><h3>MikroTik Certified Routing Engineer (MTCRE)</h3><p>ATOVA Technology · 2022</p><span class="badge">Training</span></div></div>
+<div class="training"><div class="training-icon">⬡</div><div><h3>Certified Network Security Practitioner (CNSP)</h3><p>The SecOps Group · 2025 · Credential ID: 10408705</p><span class="badge">Certification</span></div></div>
+<div class="training"><div class="training-icon">⌘</div><div><h3>CyberOps Associate</h3><p>Cisco Networking Academy (NetAcad) · 2022</p><span class="badge">Training</span></div></div>
+</div></section>
+
+<section id="education" class="reveal"><div class="section-head"><div class="kicker">Academic background</div><h2>Education</h2></div><div class="edu"><div><h3>Bachelor of Science (BSc) in Computer Science &amp; Engineering</h3><p>Ahsanullah Institute of Information and Communication Technology</p></div><div class="edu-year">2018 – 2022</div></div></section>
+
+<section id="contact" class="reveal"><div class="contact-box"><div><div class="kicker">Get in touch</div><h2 style="font-size:30px;margin:8px 0">Let's talk networking.</h2><p>Open to professional networking, technical collaboration, and opportunities related to ISP operations, IP routing, and multi-vendor network engineering.</p><div class="contact-details"><a href="mailto:mahb140r@gmail.com">✉ mahb140r@gmail.com</a><a href="tel:+8801983567035">☎ +880 1983-567035</a><a href="https://www.linkedin.com/in/demo45f" target="_blank" rel="noopener">LinkedIn ↗</a></div></div><a class="btn primary" href="mailto:mahb140r@gmail.com">Send an email ↗</a></div></section>
+</div></main>
+<footer><div class="container footer-inner"><span>© <span id="year"></span> Md. Mahbubur Rahman · Network Engineer</span><span>Built around routing, reliability, and connectivity.</span></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'×':'☰'});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.querySelectorAll('.filter-btn').forEach(button=>button.addEventListener('click',()=>{
+  const selected=button.dataset.filter;
+  document.querySelectorAll('.filter-btn').forEach(item=>{const active=item===button;item.classList.toggle('active',active);item.setAttribute('aria-pressed',String(active))});
+  document.querySelectorAll('.lab-card').forEach(card=>{card.hidden=selected!=='all'&&card.dataset.category!==selected});
+}));
+
+</script>
+</body></html>
